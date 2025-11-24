@@ -14,7 +14,8 @@
 #define LED_PIN LED_BUILTIN
 #define ledOff(pin) pinMode(pin, INPUT)
 
-#define BUTTON_PIN 9
+//#define BUTTON_PIN 9
+#define BUTTON_PIN 24
 #define BUTTON_NEED_PULLUP
 // #define EXT_NOTIFY_OUT 4
 
@@ -56,7 +57,7 @@
 #define SX126X_DIO3_TCXO_VOLTAGE 1.8
 #endif
 
-#define HAS_ETHERNET 1
+#define HAS_ETHERNET 0 //1
 #define PIN_ETHERNET_RESET 7 // IO3
 #define PIN_ETHERNET_SS 17
 #define ETH_SPI_PORT SPI
