@@ -11,29 +11,36 @@
 static const uint8_t TX = 1;
 static const uint8_t RX = 3;
 
-#define TX1 21
-#define RX1 19
+#define TX1 21 //GPS_TXD, maybe changed
+#define RX1 19 //GPS_RXD, maybe changed
 
-#define WB_IO1 14
-#define WB_IO2 27
-#define WB_IO3 26
-#define WB_IO4 23
-#define WB_IO5 13
-#define WB_IO6 22
-#define WB_SW1 34
-#define WB_A0 36
-#define WB_A1 39
-#define WB_CS 32
-#define WB_LED1 12
-#define WB_LED2 2
+#define WB_IO1 14 //not used
+#define WB_IO2 27 //SX1262_PWR_EN, not used
+#define WB_IO3 26 //SX1262_PWR_EN, OK
+//#define WB_IO4 23
+#define WB_IO4 37 //SX1262_RESET, changed
+
+#define WB_IO5 13 //BUSY, OK
+//#define WB_IO6 22
+#define WB_IO6 14 //RF_IRQ, changed
+//#define WB_SW1 34 
+#define WB_SW1 34 //changed
+#define WB_A0 36 //AIN0
+#define WB_A1 39 //AIN1
+//#define WB_CS 32
+#define WB_CS 36 //NSS,changed
+#define WB_LED1 12 //OK
+#define WB_LED2 2 //OK
 
 static const uint8_t SDA = 4;
 static const uint8_t SCL = 5;
 
-static const uint8_t SS = 32;
-static const uint8_t MOSI = 25;
-static const uint8_t MISO = 35;
-static const uint8_t SCK = 33;
+//static const uint8_t SS = 32;
+static const uint8_t SS = 38; //changed
+//static const uint8_t MOSI = 25;
+static const uint8_t MOSI = 34; //changed
+static const uint8_t MISO = 35; //OK
+static const uint8_t SCK = 33; //OK
 #endif /* Pins_Arduino_h */
 
 /* -------- Meshtastic pins -------- */
