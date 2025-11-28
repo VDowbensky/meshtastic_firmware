@@ -14,12 +14,13 @@
 #define LED_PIN LED_BUILTIN
 #define ledOff(pin) pinMode(pin, INPUT)
 
-//#define BUTTON_PIN 9
-#define BUTTON_PIN 24
+#define BUTTON_PIN 9
+//#define BUTTON_PIN 24
 #define BUTTON_NEED_PULLUP
 // #define EXT_NOTIFY_OUT 4
 
-#define BATTERY_PIN 26
+//#define BATTERY_PIN 26
+#define BATTERY_PIN 29
 #define BATTERY_SENSE_RESOLUTION_BITS ADC_RESOLUTION
 // ratio of voltage divider = 3.0 (R17=200k, R18=100k)
 #define ADC_MULTIPLIER 1.84
@@ -42,7 +43,8 @@
 
 #define LORA_DIO0 RADIOLIB_NC
 #define LORA_RESET 14
-#define LORA_DIO1 29
+#define LORA_DIO1 16
+//#define LORA_DIO1 29
 #define LORA_DIO2 15
 #define LORA_DIO3 RADIOLIB_NC
 
