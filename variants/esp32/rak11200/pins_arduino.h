@@ -20,7 +20,8 @@ static const uint8_t RX = 3;
 #define WB_IO4 23
 #define WB_IO5 13
 #define WB_IO6 22
-#define WB_SW1 34
+//#define WB_SW1 34
+#define WB_SW1 20
 #define WB_A0 36
 #define WB_A1 39
 #define WB_CS 32
