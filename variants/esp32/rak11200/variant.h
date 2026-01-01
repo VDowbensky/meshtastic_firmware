@@ -77,12 +77,12 @@ static const uint8_t SCK = 33; //OK
 #define LORA_CS SS
 
 #define USE_SX1262
-#define SX126X_ANT_SW WB_IO3
-#define SX126X_CS SS // NSS for SX126X
-#define SX126X_DIO1 LORA_DIO1
-#define SX126X_BUSY LORA_DIO2
-#define SX126X_RESET LORA_RESET
-#define SX126X_POWER_EN WB_IO2
+#define SX126X_ANT_SW WB_IO3 //26
+#define SX126X_CS SS //38 NSS for SX126X 
+#define SX126X_DIO1 LORA_DIO1 //14
+#define SX126X_BUSY LORA_DIO2 //13
+#define SX126X_RESET LORA_RESET //37
+#define SX126X_POWER_EN WB_IO2 //NC
 // DIO2 controlls an antenna switch and the TCXO voltage is controlled by DIO3
 #define SX126X_DIO2_AS_RF_SWITCH
 #define SX126X_DIO3_TCXO_VOLTAGE 1.8

@@ -31,9 +31,9 @@ static const uint8_t RX = 3;
 static const uint8_t SDA = 4;
 static const uint8_t SCL = 5;
 
-static const uint8_t SS = 32;
-static const uint8_t MOSI = 25;
-static const uint8_t MISO = 35;
-static const uint8_t SCK = 33;
+static const uint8_t SS = 32; //38
+static const uint8_t MOSI = 25; //34
+static const uint8_t MISO = 35; //35
+static const uint8_t SCK = 33; //33
 
 #endif /* Pins_Arduino_h */
