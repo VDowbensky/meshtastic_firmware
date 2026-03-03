@@ -6,8 +6,8 @@
 #define LED_POWER 2    // LED
 #define LED_STATE_ON 1 // State when LED is lit
 
-#define HAS_SCREEN 0
-//#define HAS_SCREEN 1
+//#define HAS_SCREEN 0
+#define HAS_SCREEN 1
 #define HAS_GPS 0
 #undef GPS_RX_PIN
 #undef GPS_TX_PIN

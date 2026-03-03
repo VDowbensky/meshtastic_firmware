@@ -21,5 +21,14 @@ Do not expect a working Meshtastic device with this target.
 
 #define SERIAL_PRINT_PORT 1
 
+#define PIN_SERIAL1_RX PB7
+#define PIN_SERIAL1_TX PB6
+#define HAS_GPS 1
+#define PIN_GPS_STANDBY PA15
+#define GPS_RX_PIN PB7
+#define GPS_TX_PIN PB6
+
+#define HAS_SCREEN 1
+
 #define EBYTE_E77_MBL
 #endif
