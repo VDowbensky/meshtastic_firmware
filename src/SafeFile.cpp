@@ -73,6 +73,14 @@ bool SafeFile::close()
     if (!testReadback())
         return false;
 
+    { // Scope for lock
+        concurrency::LockGuard g(spiLock);
+        // brief window of risk here ;-)
+        if (fullAtomic && FSCom.exists(filename.c_str()) && !FSCom.remove(filename.c_str())) {
+            LOG_ERROR("Can't remove old pref file");
+            return false;
+        }
+    }
     // Rename or overwrite (atomic operation)
     String filenameTmp = filename;
     filenameTmp += ".tmp";
