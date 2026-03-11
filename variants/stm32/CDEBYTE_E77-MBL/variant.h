@@ -28,7 +28,5 @@ Do not expect a working Meshtastic device with this target.
 #define GPS_RX_PIN PB7
 #define GPS_TX_PIN PB6
 
-#define HAS_SCREEN 1
-
 #define EBYTE_E77_MBL
 #endif
