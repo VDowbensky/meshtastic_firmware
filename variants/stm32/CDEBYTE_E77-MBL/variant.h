@@ -20,7 +20,6 @@ Do not expect a working Meshtastic device with this target.
 #define LED_STATE_ON 1
 
 #define SERIAL_PRINT_PORT 1
-
 #define PIN_SERIAL1_RX PB7
 #define PIN_SERIAL1_TX PB6
 #define HAS_GPS 1
